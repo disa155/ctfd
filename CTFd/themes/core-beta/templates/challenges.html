@@ -48,12 +48,11 @@
                     <button
                         class="challenge-button btn btn-dark w-100 h-100"
                         :class="[
-                          c.solved_by_me ? 'challenge-solved' : '',
-                          ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`),
+                          <!-- c.solved_by_me ? 'challenge-solved' : '', -->
+                          <!-- ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`), -->
                         ];"
                         :value="c.id" @click="loadChallenge(c.id)"
                     >
-
                       <div class="challenge-inner my-3">
                         <p x-text="c.name"></p>
                         <span x-text="c.value"></span>
